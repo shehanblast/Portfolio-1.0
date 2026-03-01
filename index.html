@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binuka Parangama | Senior Software Engineer</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Binuka Parangama</h1>
+      <div class="subtitle">
+        <span id="roleText"></span><span class="cursor">|</span>
+      </div>
+
+      <div class="section card">
+        <p>
+          <span id="experienceYears"></span>+ years of industry experience as a
+          Full Stack Software Engineer specializing in scalable backend systems,
+          fintech platforms, cloud-native architectures, and complex third-party
+          integrations. Experienced in React, NestJS, PostgreSQL, AWS, and
+          production-grade system design.
+        </p>
+      </div>
+
+      <div class="section card">
+        <h2 style="margin-top: 0">Ask Binuka</h2>
+        <p style="color: var(--muted); font-size: 14px">
+          AI-powered portfolio assistant built with Fastify + Gemini API.
+        </p>
+
+        <div class="chat-container" id="chat"></div>
+
+        <div class="input-row">
+          <input
+            type="text"
+            id="questionInput"
+            placeholder="Ask about tech stack, fintech experience, integrations..."
+          />
+          <button id="sendBtn">Send</button>
+        </div>
+
+        <div class="chips">
+          <div class="chip">What tech stack does he specialize in?</div>
+          <div class="chip">Tell me about fintech projects</div>
+          <div class="chip">What cloud experience does he have?</div>
+          <div class="chip">Has he worked with integrations?</div>
+        </div>
+      </div>
+
+      <div class="section card">
+        <h2
+          style="margin-top: 0; display: flex; align-items: center; gap: 12px"
+        >
+          AI Engine
+          <span class="status-badge">
+            <span class="status-dot"></span>
+            Active
+          </span>
+        </h2>
+
+        <p style="color: var(--muted); font-size: 14px; margin-bottom: 20px">
+          Transparent overview of the AI architecture powering this assistant.
+        </p>
+
+        <div style="display: grid; gap: 7px; font-size: 14px">
+          <div><strong>Current Version:</strong> v1.0.0</div>
+          <div><strong>Architecture:</strong> Prompt-Based LLM</div>
+          <div><strong>Model Type:</strong> Gemini API</div>
+          <div>
+            <strong>Last Updated:</strong>
+            <span id="aiLastUpdated"></span>
+          </div>
+        </div>
+
+        <div style="margin-top: 24px">
+          <strong style="font-size: 14px">Capabilities</strong>
+
+          <ul
+            style="
+              margin-top: 10px;
+              color: var(--muted);
+              font-size: 14px;
+              padding-left: 18px;
+            "
+          >
+            <li>System-prompt controlled responses</li>
+            <li>Context-aware question answering</li>
+            <li>Structured portfolio knowledge</li>
+            <li>Dynamic UI rendering</li>
+          </ul>
+        </div>
+
+        <div style="margin-top: 24px">
+          <strong style="font-size: 14px">Planned Upgrades</strong>
+
+          <ul
+            style="
+              margin-top: 10px;
+              color: var(--muted);
+              font-size: 14px;
+              padding-left: 18px;
+            "
+          >
+            <li>Real-time streaming responses</li>
+            <li>Tool / API integrations</li>
+            <li>Agent-style task execution</li>
+            <li>Versioned AI releases</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section card">
+        <h2 style="margin-top: 0">Connect</h2>
+        <p style="color: var(--muted); font-size: 14px; margin-bottom: 20px">
+          Open to engineering discussions, architecture reviews, and
+          collaboration.
+        </p>
+
+        <div class="links-grid">
+          <a href="mailto:shihanbinuka#gmail.com" class="link-card">
+            <div class="link-title">Email</div>
+            <div class="link-sub">Binuka Shihan</div>
+          </a>
+
+          <a
+            href="https://github.com/shehanblast"
+            target="_blank"
+            class="link-card"
+          >
+            <div class="link-title">GitHub</div>
+            <div class="link-sub">github.com/sheanblast</div>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/binuka-sihan-paranagama-636831194/"
+            target="_blank"
+            class="link-card"
+          >
+            <div class="link-title">LinkedIn</div>
+            <div class="link-sub">linkedin.com/in/binuka</div>
+          </a>
+
+          <a href="https://intrixdigital.com" target="_blank" class="link-card">
+            <div class="link-title">Intrix Digital</div>
+            <div class="link-sub">@intrixdigital</div>
+          </a>
+
+          <a href="https://www.arcanlabs.io/" target="_blank" class="link-card">
+            <div class="link-title">Arcan Labs</div>
+            <div class="link-sub">@arcanlabs.io</div>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-top">© <span id="year"></span> Binuka Parangama</div>
+
+        <div class="footer-arch">
+          <span>Fastify API</span>
+          <span class="dot">•</span>
+          <span>Vercel Functions</span>
+          <span class="dot">•</span>
+          <span>Gemini API</span>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
